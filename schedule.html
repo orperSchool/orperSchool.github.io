@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Confer - Conference Event HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon-orper.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+	<script src="js/navbar_creator.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo_white@0.1x.png" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+	<script>
+		header_creator("schedule")
+	</script>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <section class="breadcrumb-area bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/17.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2 class="page-title">Schedule</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- Our Schedule Area Start -->
+    <section class="our-schedule-area bg-white section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="schedule-tab">
+                        <!-- Nav Tabs -->
+                        <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="conferScheduleTab" role="tablist">
+                        </ul>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="conferScheduleTabContent">
+                    </div>
+					
+					<!-- Schedule button -->
+					<a href="#" class="btn confer-btn" style="margin-left:45%;" download>View Full Schedule (PDF) <i class="zmdi zmdi-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<script>
+		day_schedule_insert(true);
+		create_nav_panel_schedule();
+	</script>
+    <!-- Our Schedule Area End -->
+
+    <!-- Map Area Start -->
+    <div class="map-area">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352368.99043151765!2d6.4251468987318034!3d46.371714481077085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c30fdddeca23f%3A0xbbcc34ab7f93b272!2sSwiss%20Federal%20Institute%20of%20Technology%20Lausanne!5e0!3m2!1sen!2sfr!4v1689971148244!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Map Area End -->
+	
+	
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" id="footer"></footer>
+    <!-- Footer Area End -->
+	<script>
+		footer_creator("contact-email@gmail.com", "somegithublink.com", "Towards best practices in research for reproducibility and sharing of data, software and ideas.");
+	</script>
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/confer.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
