@@ -9,9 +9,9 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 ["wshop", "talk", "debate"]];
 
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard"],
-["Lenny Teytelman", "J.B. Gonzales", "EPFL Library RDM team","EPFL Library RDM team",  "OSF repr.",  "OSF repr."],
+["Speaker t.b.d", "Speaker t.b.d", "EPFL Library RDM team","EPFL Library RDM team",  "Speaker t.b.d",  "Speaker t.b.d"],
 ["Eduarda Centeno","Eduarda Centeno", "ENACIT4R", "Guillaume Anciaux", "Lorenza Salvatori"],
-["ENACIT4R", "Zoltan Dienes", "Gilles Dubochet, Linda Douw, Chris Chambers"]];
+["ENACIT4R", "Zoltan Dienes", "Gilles Dubochet, Linda Douw, Eduarda Centeno"]];
 
 let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"], 
 ["10-11am", "11-12am", "1-2pm", "2-3pm", "3:30-4pm", "4-5pm"], 
@@ -33,15 +33,12 @@ It provides as well full functionality to generate the speaker panels.
 
 let speaker_infos= [["Georg Fantner", "Associate Professor", "https://people.epfl.ch/private/common/photos/links/199129.jpg?ts=1690031440"], 
 ["Rachel Heyard", "Researcher", "https://www.ebpi.uzh.ch/contacts/ebpi/rheyard/photo/EBPI_Port_heyard_rachel_2023_05_30_1374_50kb.jpg.jpg"], 
-["Lenny Teytelman", "Researcher", "https://cdn.protocols.io/production/images/177sk/team/lenny.jpg"], 
-["J.B. Gonzales", "??", "https://img.freepik.com/premium-vector/mysterious-man-spotlight-businessman-with-no-identity-noir-concept-illustration_201904-603.jpg?w=2000"], 
 ["Eduarda Centeno", "Researcher", "https://media.licdn.com/dms/image/D4E03AQE0tYTCQa1yxA/profile-displayphoto-shrink_800_800/0/1681419701601?e=2147483647&v=beta&t=Bu8SAhd1TZFFNdoq8MtkcgrcCMuPRmKaYLNaFok2XqM"], 
  ["Guillaume Anciaux", "??", "https://img.freepik.com/premium-vector/mysterious-man-spotlight-businessman-with-no-identity-noir-concept-illustration_201904-603.jpg?w=2000"], 
  ["Lorenza Salvatori", "Bibliothécaire", "https://people.epfl.ch/private/common/photos/links/241509.jpg?ts=1690031934"], 
  ["Zoltan Dienes", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"], 
  ["Gilles Dubochet", "Open Science unit leader", "https://people.epfl.ch/private/common/photos/links/139175.jpg?ts=1690032358"], 
- ["Linda Douw", "Associate Professor", "https://www.amsterdamumc.org/upload_mm/c/5/1/cid2733_1685495240193_20170226_profilepic_192x224.jpg"], 
- ["Chris Chambers", "Professor" , "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=I-S_hs0AAAAJ&citpid=4"]];
+ ["Linda Douw", "Associate Professor", "https://www.amsterdamumc.org/upload_mm/c/5/1/cid2733_1685495240193_20170226_profilepic_192x224.jpg"]];
 let speaker_socials = [["#","#", "#","#"], 
 ["#","#", "#","#"], 
 ["#","#", "#","#"], 
