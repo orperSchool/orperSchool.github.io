@@ -359,7 +359,7 @@ function header_creator(target){
 	
 	class_nav.appendChild(nav);
 	
-	let button_href = create_href("Register now", "https://docs.google.com/forms/d/1pyLMR0QfNlf_EOzn2Y0dDHlcXwqkLEewukQu5LEmnVg/prefill");
+	let button_href = create_href("Register now", "https://docs.google.com/forms/d/e/1FAIpQLScKTHVps-Tt4uyIAeSoO4d1NX3RHfAX28pnfxZ_Ma2xVbx3uA/viewform?usp=pp_url");
 	button_href.classList.add("btn", "confer-btn", "mt-3", "mt-lg-0", "ml-3", "ml-lg-5");
 	let button_i = document.createElement("i");
 	button_i.classList.add("zmdi", "zmdi-long-arrow-right");
