@@ -19,7 +19,7 @@ let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"],
 ["10-12am", "1-2:30pm", "3-5pm"]];
 
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
-let dates = ["September 11, 2023", "September 12, 2023", "September 14, 2023", "September 15, 2023"];
+let dates = ["September 11, 2023", "September 12, 2023", "September 13, 2023", "September 14, 2023"];
 
 let place = "EPFL Room AAC108";
 
