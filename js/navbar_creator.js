@@ -11,7 +11,7 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard"],
 ["Speaker t.b.d", "Speaker t.b.d", "EPFL Library RDM team","EPFL Library RDM team",  "Speaker t.b.d",  "Speaker t.b.d"],
 ["Eduarda Centeno","Eduarda Centeno", "ENACIT4R", "Guillaume Anciaux", "Lorenza Salvatori"],
-["ENACIT4R", "Zoltan Dienes", "Zoltan Dienes, Eduarda Centeno"]];
+["ENACIT4R", "Zoltan Dienes", "Zoltan Dienes, Eduarda Centeno, Russ Poldrack"]];
 
 let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"], 
 ["10-11am", "11-12am", "1-2pm", "2-3pm", "3:30-4pm", "4-5pm"], 
@@ -34,9 +34,10 @@ It provides as well full functionality to generate the speaker panels.
 let speaker_infos= [["Georg Fantner", "Associate Professor", "https://people.epfl.ch/private/common/photos/links/199129.jpg?ts=1690031440"], 
 ["Rachel Heyard", "Researcher", "https://www.ebpi.uzh.ch/contacts/ebpi/rheyard/photo/EBPI_Port_heyard_rachel_2023_05_30_1374_50kb.jpg.jpg"], 
 ["Eduarda Centeno", "Researcher", "https://media.licdn.com/dms/image/D4E03AQE0tYTCQa1yxA/profile-displayphoto-shrink_800_800/0/1681419701601?e=2147483647&v=beta&t=Bu8SAhd1TZFFNdoq8MtkcgrcCMuPRmKaYLNaFok2XqM"], 
- ["Guillaume Anciaux", "??", "https://img.freepik.com/premium-vector/mysterious-man-spotlight-businessman-with-no-identity-noir-concept-illustration_201904-603.jpg?w=2000"], 
+ ["Guillaume Anciaux", "Research and teaching associate", "https://img.freepik.com/premium-vector/mysterious-man-spotlight-businessman-with-no-identity-noir-concept-illustration_201904-603.jpg?w=2000"], 
  ["Lorenza Salvatori", "Bibliothécaire", "https://people.epfl.ch/private/common/photos/links/241509.jpg?ts=1690031934"], 
- ["Zoltan Dienes", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"]];
+ ["Zoltan Dienes", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"],
+ ["Russ Poldrack", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"]];
 let speaker_socials = [["#","#", "#","#"], 
 ["#","#", "#","#"], 
 ["#","#", "#","#"], 
@@ -64,10 +65,11 @@ function generate_speaker_div(speaker_img_link, speaker_name, speaker_role, spea
 	
 	{	
 		let img = document.createElement("img");
-		img.src = speaker_img_link;
+		img.src = './img/bg-img/simple.png';
 		speaker_img.appendChild(img);
 	}
 	
+	/*
 	let social_info = document.createElement("div");
 	social_info.classList.add("social-info");
 	
@@ -100,7 +102,7 @@ function generate_speaker_div(speaker_img_link, speaker_name, speaker_role, spea
 		social_info.appendChild(insta);
 		social_info.appendChild(twitter);
 		social_info.appendChild(linkedin);
-	}
+	}*/
 	
 	let speaker_info = document.createElement("div");
 	speaker_info.classList.add("speaker-info");
@@ -116,7 +118,7 @@ function generate_speaker_div(speaker_img_link, speaker_name, speaker_role, spea
 	}
 
 	speak_area.appendChild(speaker_img);
-	speak_area.appendChild(social_info);
+	/*speak_area.appendChild(social_info);*/
 	speak_area.appendChild(speaker_info);
 	
 	div_up.appendChild(speak_area);
@@ -501,11 +503,10 @@ function copyright_creator(){
 	text_copy.classList.add("copywrite-text");
 	
 	let p = document.createElement("p");
-	let s = document.createElement("script");
-	s.innerHTML ="document.write(new Date().getFullYear());";
+	/*let s = document.createElement("script");
+	s.innerHTML ="document.write(new Date().getFullYear());";*/
 
-	p.textContent = "Copyright &copy;";
-	p.appendChild(s);
+	p.textContent = "Copyright &copy;" + new Date().getFullYear();
 	p.insertAdjacentHTML("beforeend", " All rights reserved | This template is made with ");
 	
 	let clib_love = document.createElement("i");
