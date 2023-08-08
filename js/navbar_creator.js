@@ -126,7 +126,7 @@ function generate_speaker_div(speaker_img_link, speaker_name, speaker_role, spea
 	return div_up;
 }
 
-function create_dspeakers(){
+function create_speakers(){
 	let schedule_area = document.getElementById("speakerContent");
 	
 	for(let i=0; i < speaker_infos.length; ++i){
