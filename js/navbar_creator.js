@@ -9,9 +9,9 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 ["wshop", "talk", "debate"]];
 
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard"],
-["Speaker t.b.d", "Speaker t.b.d", "EPFL Library RDM team","EPFL Library RDM team",  "Speaker t.b.d",  "Speaker t.b.d"],
-["Eduarda Centeno","Eduarda Centeno", "ENACIT4R", "Guillaume Anciaux", "Lorenza Salvatori"],
-["ENACIT4R", "Zoltan Dienes", "Zoltan Dienes, Eduarda Centeno, Russ Poldrack"]];
+["Speaker t.b.d", "Speaker t.b.d", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Speaker t.b.d",  "Speaker t.b.d"],
+["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp", "Guillaume Anciaux", "EPFL Publishing Support Library \n Lorenza Salvatori"],
+["ENACIT4R \n William Wegener \n Pierre Guibert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
 
 let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"], 
 ["10-11am", "11-12am", "1-2pm", "2-3pm", "3:30-4pm", "4-5pm"], 
@@ -126,7 +126,7 @@ function generate_speaker_div(speaker_img_link, speaker_name, speaker_role, spea
 	return div_up;
 }
 
-function create_speakers(){
+function create_dspeakers(){
 	let schedule_area = document.getElementById("speakerContent");
 	
 	for(let i=0; i < speaker_infos.length; ++i){
@@ -194,7 +194,16 @@ function create_schedule_entry(event_name, speaker_name, event_type, hour, place
 		let speaker = document.createElement("p");
 		speaker.textContent="by ";
 		let span = document.createElement("span");
-		span.textContent=speaker_name;
+		let names = speaker_name.split('\n');
+		if(names.length == 1){
+			span.textContent=speaker_name;
+		} else {
+			for(let i=0; i < names.length; ++i){
+				let textNode = document.createTextNode(names[i]);
+				span.appendChild(textNode);
+				span.appendChild(document.createElement("br"));
+			}
+		}
 		
 		speaker.appendChild(span);
 		
