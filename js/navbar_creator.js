@@ -1,6 +1,6 @@
 let schedules = [["Welcome event", "The reproducibility crisis",  "Open science", "Statistical plan", "Statistical plan"], 
-["Data collection", "Data storage", "Data management plan","Data management plan", "Pre-registration", "Pre-registration"], 
-["Clean Code", "Clean code", "Versioning with Git", "Metadata-Datasharing", "Scientific publishing"],
+["Data storage", "Metadata - Datasharing", "Data management plan","Data management plan", "Pre-registration", "Pre-registration"], 
+["Clean Code", "Clean code", "Versioning with Git", "Data collection", "Scientific publishing"],
 ["Clean code and data challenge", "The future of scientific publication", "Open discussion: how to change the incentives?"]];
 
 let event_types = [["other", "talk", "talk", "talk", "wshop"],
@@ -9,9 +9,9 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 ["wshop", "talk", "debate"]];
 
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard"],
-["Speaker t.b.d", "Speaker t.b.d", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Speaker t.b.d",  "Speaker t.b.d"],
-["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp", "Guillaume Anciaux", "EPFL Publishing Support Library \n Lorenza Salvatori"],
-["ENACIT4R \n William Wegener \n Pierre Guibert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
+["Guillaume Anciaux", "Guillaume Anciaux", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Speaker t.b.d",  "Speaker t.b.d"],
+["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Guillaume Anciaux", "EPFL Publishing Support Library \n Lorenza Salvatori"],
+["ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
 
 let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"], 
 ["10-11am", "11-12am", "1-2pm", "2-3pm", "3:30-4pm", "4-5pm"], 
@@ -37,7 +37,12 @@ let speaker_infos= [["Georg Fantner", "Associate Professor", "https://people.epf
  ["Guillaume Anciaux", "Research and teaching associate", "https://img.freepik.com/premium-vector/mysterious-man-spotlight-businessman-with-no-identity-noir-concept-illustration_201904-603.jpg?w=2000"], 
  ["Lorenza Salvatori", "Bibliothécaire", "https://people.epfl.ch/private/common/photos/links/241509.jpg?ts=1690031934"], 
  ["Zoltan Dienes", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"],
- ["Russ Poldrack", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"]];
+ ["Russ Poldrack", "Professor", "https://profiles.sussex.ac.uk/p718-zoltan-dienes/photo"],
+ ["Chiara Gabella", "Scientist", ""],
+ ["Francesco Varrato", "Data Librarian", ""],
+ ["Régis Longchamp", "Data Engineer", ""],
+ ["William Wegener", "Civil Law", ""],
+ ["Pierre Guilbert", "Full-stack Developer", ""]];
 let speaker_socials = [["#","#", "#","#"], 
 ["#","#", "#","#"], 
 ["#","#", "#","#"], 
