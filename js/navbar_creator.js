@@ -1,6 +1,6 @@
-let schedules = [["Welcome event", "The reproducibility crisis",  "Open science", "Statistical plan", "Statistical plan"], 
+let schedules = [["Welcome event", "The reproducibility crisis",  "Open science", "Statistical plan", "Statistical plan", "Data collection"], 
 ["Data storage", "Metadata - Datasharing", "Data management plan","Data management plan", "Pre-registration", "Pre-registration"], 
-["Clean Code", "Clean code", "Versioning with Git", "Data collection", "Scientific publishing"],
+["Clean Code", "Clean code", "Versioning with Git", "Scientific publishing"],
 ["Clean code and data challenge", "The future of scientific publication", "Open discussion: how to change the incentives?"]];
 
 let event_types = [["other", "talk", "talk", "talk", "wshop"],
@@ -8,14 +8,14 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 ["talk", "wshop", "wshop", "talk", "talk"],
 ["wshop", "talk", "debate"]];
 
-let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard"],
+let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard", "Gabriel Gasque"],
 ["Guillaume Anciaux", "Guillaume Anciaux", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Caro Hautekiet",  "Caro Hautekiet"],
 ["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Guillaume Anciaux", "EPFL Publishing Support Library \n Lorenza Salvatori"],
 ["ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
 
-let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm"], 
+let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm", "5pm-6pm"], 
 ["10-11am", "11-12am", "1-2pm", "2-3pm", "3:30-4pm", "4-5pm"], 
-["10-11am","11-12am","1-2:30pm", "3-4pm", "4-5pm"], 
+["10-11am","11-12am","1-2:30pm", "3-4pm"], 
 ["10-12am", "1-2:30pm", "3-5pm"]];
 
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
@@ -43,7 +43,8 @@ let speaker_infos= [["Georg Fantner", "Associate Professor", "https://people.epf
  ["Régis Longchamp", "Data Engineer", ""],
  ["William Wegener", "Civil Law", ""],
  ["Pierre Guilbert", "Full-stack Developer", ""],
- ["Caro Hautekiet", "PhD candidate", ""]];
+ ["Caro Hautekiet", "PhD candidate", ""],
+ ["Gabriel Gasque", "Heads of Outreach, Protocols.io", ""]];
 let speaker_socials = [["#","#", "#","#"], 
 ["#","#", "#","#"], 
 ["#","#", "#","#"], 
@@ -136,7 +137,7 @@ function create_speakers(){
 	let schedule_area = document.getElementById("speakerContent");
 	
 	for(let i=0; i < speaker_infos.length; ++i){
-		let speaker_div = generate_speaker_div(speaker_infos[i][2], speaker_infos[i][0], speaker_infos[i][1], speaker_socials[i][0], speaker_socials[i][1], speaker_socials[i][2], speaker_socials[i][3]);
+		let speaker_div = generate_speaker_div(speaker_infos[i][2], speaker_infos[i][0], speaker_infos[i][1], speaker_socials[0][0], speaker_socials[0][1], speaker_socials[0][2], speaker_socials[0][3]);
 		schedule_area.appendChild(speaker_div);
 	}
 	
