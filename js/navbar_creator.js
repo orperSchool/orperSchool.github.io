@@ -3,9 +3,9 @@ let schedules = [["Welcome event", "The reproducibility crisis",  "Open science"
 ["Clean Code", "Clean code", "Versioning with Git", "Scientific publishing"],
 ["Clean code and data challenge", "The future of scientific publication", "Open discussion: how to change the incentives?"]];
 
-let event_types = [["other", "talk", "talk", "talk", "wshop"],
+let event_types = [["other", "talk", "talk", "talk", "wshop", "talk"],
 ["talk", "talk", "talk", "wshop", "talk", "wshop"],
-["talk", "wshop", "wshop", "talk", "talk"],
+["talk", "wshop", "wshop", "talk"],
 ["wshop", "talk", "debate"]];
 
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard", "Gabriel Gasque"],
