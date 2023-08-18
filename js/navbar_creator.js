@@ -10,7 +10,7 @@ let event_types = [["other", "talk", "talk", "talk", "wshop"],
 
 let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard", "Gabriel Gasque"],
 ["Guillaume Anciaux", "Guillaume Anciaux", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Caro Hautekiet",  "Caro Hautekiet"],
-["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Guillaume Anciaux", "EPFL Publishing Support Library \n Lorenza Salvatori"],
+["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "EPFL Publishing Support Library \n Lorenza Salvatori"],
 ["ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
 
 let times = [["10-11am", "11-12am", "1-2pm", "2:30-3:30pm", "3:30-5pm", "5pm-6pm"], 
