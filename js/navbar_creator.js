@@ -8,7 +8,7 @@ let event_types = [["other", "talk", "talk", "talk", "wshop", "talk"],
 ["talk", "wshop", "wshop", "talk"],
 ["wshop", "talk", "debate"]];
 
-let speakers= [["Organizing committee", "Speaker t.b.d.", "Georg Fantner", "Rachel Heyard", "Rachel Heyard", "Gabriel Gasque"],
+let speakers= [["Organizing committee", "Stefano Moia", "Georg Fantner", "Rachel Heyard", "Rachel Heyard", "Gabriel Gasque"],
 ["Guillaume Anciaux", "Guillaume Anciaux", "EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato","EPFL Library RDM team \n Chiara Gabella \n Francesco Varrato",  "Caro Hautekiet",  "Caro Hautekiet"],
 ["Eduarda Centeno","Eduarda Centeno", "ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "EPFL Publishing Support Library \n Lorenza Salvatori"],
 ["ENACIT4R \n Régis Longchamp \n William Wegener \n Pierre Guilbert", "Zoltan Dienes", "Zoltan Dienes\n Eduarda Centeno\n Russ Poldrack"]];
@@ -44,7 +44,8 @@ let speaker_infos= [["Georg Fantner", "Associate Professor", "https://people.epf
  ["William Wegener", "Civil Law", ""],
  ["Pierre Guilbert", "Full-stack Developer", ""],
  ["Caro Hautekiet", "PhD candidate", ""],
- ["Gabriel Gasque", "Heads of Outreach, Protocols.io", ""]];
+ ["Gabriel Gasque", "Heads of Outreach, Protocols.io", ""],
+ ["Stefano Moia", "Researcher", ""]];
 let speaker_socials = [["#","#", "#","#"], 
 ["#","#", "#","#"], 
 ["#","#", "#","#"], 
