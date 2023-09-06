@@ -1,6 +1,6 @@
 let schedules = [["Welcome event", "The reproducibility crisis",  "Open science", "Statistical plan", "Statistical plan", "Data collection"], 
 ["Data storage", "Metadata - Datasharing", "Data management plan","Data management plan", "Pre-registration", "Pre-registration"], 
-["Clean Code", "Clean code", "Versioning with Git", "Scientific publishing"],
+["Clean Code", "Clean code", "Versioning with Git", "Open access publishing"],
 ["Clean code and data challenge", "The future of scientific publication", "Open discussion: how to change the incentives?"]];
 
 let event_types = [["other", "talk", "talk", "talk", "wshop", "talk"],
